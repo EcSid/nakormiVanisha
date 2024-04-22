@@ -154,6 +154,17 @@ html {
     transform: translate(-50%);
 }
 
+.gameOver {
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 
 .overBack {
