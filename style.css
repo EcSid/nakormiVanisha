@@ -434,33 +434,37 @@ html {
 .mir28 {
   left: 15%;
   width: 15.4%;
+  height: 23%;
 }
 
 .mir29 {
   bottom: 0;
   left: 15%;
   width: 15.4%;
+  height: 23%
 } 
 
 .mir30 {
   left: 52%;
   width: 15.55%;
+  height: 22.75%;
 }
 
 .mir31 {
   left: 52%;
   bottom: 0%;
   width: 15.55%;
+  height: 22.75%
 }
 
 .artem32 {
-  left: 35%;
+  left: 36%;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .artem33 {
-  left: 72%;
+  left: 71.45%;
   top: 50%;
   transform: translate(0, -50%);
 }
