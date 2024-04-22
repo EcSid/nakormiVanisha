@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+  font-family: "FONT";
+  src: url(fonts/TransformaSans_Trial-Medium.ttf); 
+}
+
+html {
+  overflow: hidden;
+  font-family: "FONT";
+}
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .fir {
+            margin-top: 3%;
+        }
+        .sec {
+            margin-top: -2%;
+        }
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        a {
+            position: absolute;
+            display: block;
+            margin-top: 28%;
+            font-size: 22px;
+            left: 50%;
+            
+            text-decoration: none;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+<body class="hidden">
+    <p class="fir">Мне лень было делать этот уровень</p>
+    <p class="sec">Вместо него можешь посмотреть на этих двух красавцев</p>
+    <img src="photo/twoMen.jpeg" width="400px" height="400px">
+    <a href="level10.html">Следующий уровень</a>
+    <script>
+        setTimeout(document.body.classList.remove("hidden"), 2000);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="fontPage">
+<head>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+            font-family: "FONT";
+            src: url(fonts/TransformaSans_Trial-Medium.ttf);
+        }
+        html {
+            font-family: "FONT";
+        }
+
+        h1 {
+            font-size: 90px;
+            text-align: center;
+            margin-top: 4%;
+            color: red;
+            text-decoration: double;
+        }
+
+        a {
+            display: block;
+            font-size: 55px;
+            color: black;
+            margin-top: 9%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .attention {
+            margin-top: 0%;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        img {
+            position: absolute;
+            top: 10.5%;
+        }
+        .fir {
+           left: 10%;
+        }
+
+        .sec {
+            right: 10%;
+        }
+
+        button {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 80%;
+            display: inline-block;
+            height: 6%;
+            font-size: 20px;
+            border-width: 2px;
+            border-radius: 12px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .textTime {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 87%;
+            font-size: 20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <img src="photo/pizzaBegin.jpg" width="150px" class="fir">
+    <img src="photo/pizzaBegin.jpg" width="150px" class="sec">
+    <h1>Накорми Ваниша</h1>
+    <a class="a" target="_blank"  href="level1.html">Начать</a>
+    <p class="attention">Вы можете установить таймер, <br> чтобы узнать своё время прохождения</p>
+    <button type="button">Запустить таймер</button>
+    <p class="textTime"></p>
+    <script>
+        const button = document.querySelector("button");
+        const text = document.querySelector(".textTime");
+        let timeSec = 0;
+        let timeMin = 0;
+        button.addEventListener("click", () => {
+            text.classList.remove("hidden");
+            let timer = setInterval(() => {
+                if (timeSec >= 60) {
+                    timeSec = 0;
+                    timeMin++;
+                } else {
+                    timeSec = timeSec + 1;
+                    text.textContent = `${timeMin} мин. ${timeSec}  сек. `;
+                }
+            }, 1000);
+        });
+
+    
+    </script>
+</body>
+</html> 

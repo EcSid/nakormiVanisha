@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+        font-family: "FONT";
+        src: url(fonts/TransformaSans_Trial-Medium.ttf);
+    }
+
+html {
+  overflow: hidden;
+  font-family: "FONT";
+}
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        span {
+            color: red;
+            font-size: 34px;
+        }
+
+        .fir {
+            margin-top: 2%;
+        }
+        
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 37%
+        }
+        a {
+            position: absolute;
+            display: block;
+            bottom: 3%;
+            font-size: 22px;
+            left: 50%;
+        
+            
+            text-decoration: none;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+<body class="hidden">
+    <p class="fir">Поздравляю, ты прошёл игру!<br>Если ты засекал секундомер, можешь<br>выключить его и посмотреть свой результат!<br>Свой результат можно отправить на общий сервер.<br><span>Удачи!</span></p>
+    <img src="photo/vanish.jpeg" width="280px">
+    <a href="https://www.google.ru/">Выйти</a>
+    <script>
+        setTimeout(document.body.classList.remove("hidden"), 2000);
+    </script>
+</body>
+</html> 
